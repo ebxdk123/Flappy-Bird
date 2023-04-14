@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url(Pixel.ttf);
+}
+
+body{
+    background-image: url(wp6956899.png);
+    overflow: hidden;
+}
+
+span{
+    padding: 850px;
+    font-size: 150px;
+    font-family:'Pixel';
+    color: purple;
+}
+
+#game{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+    background: url(Untitled2.png);
+    
+}
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: transparent;
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+
+}
+@keyframes block{
+    0%{left:400px}
+    100%{left:-50px}
+}
+#hole{
+    width: 81px;
+    height: 150px;
+    position: relative;
+    background-color: white;
+    left: 400px;
+    top: -500px;
+    background: url('f7f87af1a4d4893-removebg-preview (3).png');
+    animation: block 2s infinite linear;
+}
+#character{
+    width: 68px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
+    background: url(flappybird.png);
+}
